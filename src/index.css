@@ -3,3 +3,89 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+#header-title {
+  font-size: 25px;
+}
+
+#dog-icon {
+  width: 96px;
+  height: 96px;
+  margin-left: 15px;
+}
+
+#portfolio-title {
+  font-size: 25px;
+  height: 50px;
+  padding: 10px;
+  text-align: left;
+  background-color: #222;
+  color: white;
+}
+
+#folder-logo {
+  padding-left: 10px;
+}
+
+.button {
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+.col-md-3, .col-md-6 {
+  background-color: #222;
+  height: 160px;
+  padding: 20px;
+  color: white;
+}
+
+.col-md-2 {
+  background-color: #222;
+  height: 1630px;
+}
+
+.portfolio-image {
+  text-align: left;
+  bottom: 50px;
+}
+
+.left-img {
+  float: left;
+  padding:2px;
+  border:2px solid #021a40;
+  background-color:#00BFFF;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.right-img {
+  float: right;
+  padding:2px;
+  border:2px solid #021a40;
+  background-color:#00BFFF;
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
+
+#nudge-img {
+  height: 687px;
+  width: 381px;
+}
+
+#left-title {
+  float: left;
+  width: 50%;
+  padding-left: 35px;
+}
+
+#right-title {
+  float: right;
+  width: 50%;
+  padding-left: 30px;
+}
+
+#font-padding {
+  padding-left: 10px;
+}
