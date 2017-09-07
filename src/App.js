@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import { Home } from './components/Home';
 
 class App extends Component {
   render() {
@@ -18,5 +21,20 @@ class App extends Component {
     );
   }
 }
-
 export default App;
+
+ReactDOM.render(
+    <BrowserRouter>
+      <div>
+        <ul>
+          <li>
+            <NavLink to="/" activeClassName="active">
+              Home
+            </NavLink>
+          </li>
+        </ul>
+        <Route path="/" component={Home} exact={true}/>
+      </div>
+    </BrowserRouter>,
+    document.getElementById('root')
+);
