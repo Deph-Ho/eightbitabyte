@@ -22,19 +22,3 @@ class App extends Component {
   }
 }
 export default App;
-
-ReactDOM.render(
-    <BrowserRouter>
-      <div>
-        <ul>
-          <li>
-            <NavLink to="/" activeClassName="active">
-              Home
-            </NavLink>
-          </li>
-        </ul>
-        <Route path="/" component={Home} exact={true}/>
-      </div>
-    </BrowserRouter>,
-    document.getElementById('root')
-);
