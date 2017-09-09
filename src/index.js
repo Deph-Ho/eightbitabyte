@@ -16,7 +16,7 @@ ReactDOM.render(
     <div>
       <ul className="nav nav-tabs">
         <li className="nav-item nav-btn css-animator">
-          <NavLink to="/Home" activeClassName="active">Home</NavLink>
+          <NavLink to="/" activeClassName="active">Home</NavLink>
         </li>
         <li className="nav-item nav-btn css-animator">
           <NavLink to="/AboutMe" activeClassName="active">About Me</NavLink>
@@ -25,7 +25,7 @@ ReactDOM.render(
           <NavLink to="/Portfolio" activeClassName="active">Portfolio</NavLink>
         </li>
       </ul>
-       <Route exact path="/Home" component={App}/>
+       <Route exact path="/" component={App}/>
        <Route path="/AboutMe" component={AboutMe}/>
        <Route path="/Portfolio" component={Portfolio}/>
     </div>
