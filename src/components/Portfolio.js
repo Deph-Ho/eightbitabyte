@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 
-class Portfolio extends Component {
+export class Portfolio extends Component {
   render() {
     return(
       <div>
-        <div className="col-md-2"> </div>
+        <div className="col-md-2">{/* ;nbsp */}</div>
         <div className="col-md-8">
           <h1 id="portfolio-title">
             Portfolio
@@ -61,7 +61,7 @@ class Portfolio extends Component {
             </a>
           </div>
         </div>
-        <div className="col-md-2"> </div>
+        <div className="col-md-2">{/* ;nbsp */}</div>
       </div>
     );
   }

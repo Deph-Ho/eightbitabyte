@@ -8,6 +8,13 @@ body {
   font-size: 25px;
 }
 
+#header-des {
+  background-color: #222;
+  height: 160px;
+  padding: 20px;
+  color: white;
+}
+
 #dog-icon {
   width: 96px;
   height: 96px;
@@ -15,6 +22,7 @@ body {
 }
 
 #portfolio-title {
+  margin: 0;
   font-size: 25px;
   height: 50px;
   padding: 10px;
@@ -27,6 +35,14 @@ body {
   padding-left: 10px;
 }
 
+#about-des {
+  background-color: #222;
+  font-size: 15px;
+  height: 300px;
+  padding: 40px;
+  color: white;
+}
+
 .button {
   position: relative;
   margin: auto;
@@ -34,16 +50,9 @@ body {
   display: inline-block;
 }
 
-.col-md-3, .col-md-6 {
-  background-color: #222;
-  height: 160px;
-  padding: 20px;
-  color: white;
-}
-
 .col-md-2 {
   background-color: #222;
-  height: 1630px;
+  height: 1600px;
 }
 
 .portfolio-image {

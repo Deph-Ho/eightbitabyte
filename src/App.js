@@ -5,7 +5,7 @@ import logo from './logo.svg';
 import './css/App.css';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import { Home } from './components/Home';
+import { AboutMe } from './components/AboutMe';
 
 class App extends Component {
   render() {
@@ -16,7 +16,6 @@ class App extends Component {
           <h2 id="App-name">Dephanie Ho</h2>
         </div>
         <Header />
-        <Portfolio />
       </div>
     );
   }

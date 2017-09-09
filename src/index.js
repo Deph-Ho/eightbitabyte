@@ -5,7 +5,8 @@ import './css/index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Home } from './components/Home';
+import { AboutMe } from './components/AboutMe';
+import { Portfolio } from './components/Portfolio';
 
 
 ReactDOM.render(
@@ -13,21 +14,22 @@ ReactDOM.render(
   { /*Navigation Tab*/ }
   <BrowserRouter>
     <div>
-      <ul>
-        <li>
-          <NavLink to="/home" activeClassName="active">Home</NavLink>
+      <ul className="nav nav-tabs">
+        <li className="nav-item nav-btn css-animator">
+          <NavLink to="/Home" activeClassName="active">Home</NavLink>
         </li>
-        <li>
-          <NavLink exact={true} to="/" activeClassName="active">App</NavLink>
+        <li className="nav-item nav-btn css-animator">
+          <NavLink to="/AboutMe" activeClassName="active">About Me</NavLink>
+        </li>
+        <li className ="nav-item nav-btn css-animator">
+          <NavLink to="/Portfolio" activeClassName="active">Portfolio</NavLink>
         </li>
       </ul>
-       <Route path="/home" component={Home}/>
-       <Route exact path="/" component={App}/>
+       <Route exact path="/Home" component={App}/>
+       <Route path="/AboutMe" component={AboutMe}/>
+       <Route path="/Portfolio" component={Portfolio}/>
     </div>
   </BrowserRouter>
-
-  { /*Rest of applicaton*/ }
-
   </div>,
   document.getElementById('root')
 );
