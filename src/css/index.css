@@ -1,9 +1,23 @@
+/* Global */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
+.button {
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+.col-md-2 {
+  background-color: #222;
+  height: 1600px;
+}
+
+/* Header */
 #header-title {
   font-size: 25px;
 }
@@ -21,6 +35,8 @@ body {
   margin-left: 15px;
 }
 
+
+/* Portfolio */
 #portfolio-title {
   margin: 0;
   font-size: 25px;
@@ -35,52 +51,27 @@ body {
   padding-left: 10px;
 }
 
-#about-des {
-  background-color: #222;
-  font-size: 15px;
-  height: 300px;
-  padding: 40px;
-  color: white;
-}
-
-.button {
-  position: relative;
-  margin: auto;
-  padding: 10px;
-  display: inline-block;
-}
-
-.col-md-2 {
-  background-color: #222;
-  height: 1600px;
-}
-
 .portfolio-image {
   text-align: left;
   bottom: 50px;
 }
 
 .left-img {
-  float: left;
-  padding:2px;
   border:2px solid #021a40;
   background-color:#00BFFF;
+  height: 687px;
+  width: 381px;
+  float: left;
   margin-left: 35px;
-  margin-bottom: 20px;
 }
 
 .right-img {
-  float: right;
-  padding:2px;
-  border:2px solid #021a40;
+  border: 2px solid #021a40;
   background-color:#00BFFF;
-  margin-right: 35px;
-  margin-bottom: 20px;
-}
-
-#nudge-img {
   height: 687px;
   width: 381px;
+  float: right;
+  margin-right: 35px;
 }
 
 #left-title {
@@ -97,4 +88,69 @@ body {
 
 #font-padding {
   padding-left: 10px;
+}
+
+.imageContainer-left {
+  float: left;
+  position: relative;
+  width: 381px;
+  height: 687px;
+}
+
+.imageContainer-right {
+  float: right;
+  position: relative;
+  width: 381px;
+  height: 687px;
+}
+
+.imageContainer-left .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.imageContainer-right .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.imageContainer-left:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  margin-left: 35px;
+  color: white;
+  text-align: center;
+}
+
+.imageContainer-right:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  margin-left: -35px;
+  color: white;
+  text-align: center;
+}
+
+.after h3 {
+  color: white;
+  display: inline-table;
+  vertical-align:middle;
+  line-height:100%;
+  margin-top: 50%;
+}
+
+/* AboutMe */
+#about-des {
+  background-color: #222;
+  font-size: 15px;
+  height: 300px;
+  padding: 40px;
+  color: white;
 }
