@@ -32,7 +32,7 @@ class Header extends Component {
         <div id="header-des" className= "col-md-3">{/* ;nbsp */}</div>
         <div id="header-des" className="col-md-6 textcenter">
           <h3>
-            Incoming third year student and junior software developer seeking
+            Third year student and junior software developer seeking
             opportunities to develop professional skills and provide a strong
             contribution to organization goals.
           </h3>
