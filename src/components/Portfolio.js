@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import dojoPic from '../assets/dojo.png';
+
 
 export class Portfolio extends Component {
   render() {
@@ -18,11 +20,30 @@ export class Portfolio extends Component {
         </div>
 
         {/* First Row */}
+        <div className="row">
+        <div className="col-md-4 col-xs-2">{/* ;nbsp */}</div>
+        <div className="col-md-4 col-xs-2">
+          <div className="left-img-container bottom10">
+            <a href="https://youtu.be/m4iMAQUKfXg" target = "_blank">
+                  <img className="left-img" id="dojo-img"
+                    src={dojoPic}
+                    alt="Youtube link to walkthrough of Dojo"
+                    />
+                    <div className="middle">
+                      <h3>Dojo</h3>
+                    </div>
+              </a>
+          </div>
+          </div>
+          <div className="col-md-4 col-xs-2">{/* ;nbsp */}</div>
+        </div>
+
+        {/* Second Row */}
         <div className="row bottom10">
         <div className="col-md-2 col-xs-2">{/* ;nbsp */}</div>
         <div className="col-md-4 col-xs-4">
           <div className="left-img-container">
-            <a href="https://www.youtube.com/watch?v=gGd28bofXXA&t=3s" target = "_blank">
+          <a href="https://www.youtube.com/watch?v=gGd28bofXXA&t=3s" target = "_blank">
                 <img className="left-img"
                   src="https://camo.githubusercontent.com/529822d63d730bda775da09ed82e031d7ae8d314/687474703a2f2f692e696d6775722e636f6d2f4f4d584f36474d2e676966"
                   alt="Youtube link to walkthrough of Nudge"
@@ -48,7 +69,7 @@ export class Portfolio extends Component {
           <div className="col-md-2 col-xs-2">{/* ;nbsp */}</div>
         </div>
         
-        {/* Second Row*/}
+        {/* Third Row*/}
         <div className="row bottom10">
         <div className="col-md-2 col-xs-2">{/* ;nbsp */}</div>
         <div className="col-md-4 col-xs-4">
