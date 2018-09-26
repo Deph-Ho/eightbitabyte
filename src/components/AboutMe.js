@@ -4,7 +4,7 @@ export default class AboutMe extends Component {
 
   render() {
     return (
-      <div>
+      <div class="magic-erika">
         <div id="about-des" className="col-md-3">{/* ;nbsp */}</div>
         <div id="about-des" className="col-md-6">
         <div id="about-scroll">
